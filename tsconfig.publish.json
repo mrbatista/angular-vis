@@ -26,7 +26,7 @@
     "node_modules"
   ],
   "files": [
-    "./ng2-vis.ts"
+    "./ngx-vis.ts"
   ],
   "angularCompilerOptions": {
     "genDir": "factories"
