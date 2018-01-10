@@ -1,33 +1,33 @@
 {
-  "name": "ng2-vis",
+  "name": "ngx-vis",
   "version": "0.0.6",
-  "main": "ng2-vis.js",
-  "types": "ng2-vis.d.ts",
+  "main": "ngx-vis.js",
+  "types": "ngx-vis.d.ts",
   "description": "Angular 2 components for using vis.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/seveves/ng2-vis.git"
+    "url": "git+https://github.com/mrbatista/ngx-vis.git"
   },
   "keywords": [
     "angular2",
-    "ng2",
+    "ngx",
     "vis",
     "angular2-vis",
-    "ng2-vis"
+    "ngx-vis"
   ],
   "author": "Severin Friede <seveves>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/seveves/ng2-vis/issues"
+    "url": "https://github.com/mrbatista/ngx-vis/issues"
   },
-  "homepage": "https://github.com/seveves/ng2-vis#readme",
+  "homepage": "https://github.com/mrbatista/ngx-vis#readme",
   "scripts": {
     "flow.compile": "npm run flow.compile:common && npm run flow.compile:system && npm run flow.extract-metadata",
     "flow.compile:tsc": "./node_modules/.bin/tsc -p tsconfig.publish.json",
     "flow.compile:common": "npm run flow.compile:tsc",
     "flow.compile:system": "node ./.config/bundle-system.js",
-    "flow.copy:src": "./node_modules/.bin/cpy ng2-vis.ts \"components/*.ts\" ts --parents",
-    "flow.clean": "./node_modules/.bin/rimraf bundles coverage dist demo-build \"components/**/*.+(metadata.json|js|d.ts|js.map)\" dist \"ng2-vis.+(js|d.ts|js.map)\"",
+    "flow.copy:src": "./node_modules/.bin/cpy ngx-vis.ts \"components/*.ts\" ts --parents",
+    "flow.clean": "./node_modules/.bin/rimraf bundles coverage dist demo-build \"components/**/*.+(metadata.json|js|d.ts|js.map)\" dist \"ngx-vis.+(js|d.ts|js.map)\"",
     "flow.eslint": "./node_modules/.bin/eslint --ignore-path .gitignore --ext js --fix . .config",
     "flow.extract-metadata": "./node_modules/.bin/ngc -p tsconfig.publish.json",
     "flow.tslint": "./node_modules/.bin/gulp lint",

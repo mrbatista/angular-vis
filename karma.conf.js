@@ -4,7 +4,7 @@
 'use strict';
 
 // Look in ./config for karma.conf.js
-const config = require('./.ng2-config');
+const config = require('./.ngx-config');
 
 config.src = '/';
 

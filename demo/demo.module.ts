@@ -6,7 +6,7 @@ import { RouterModule }   from '@angular/router';
 
 import { VisNetworkExampleComponent } from './network/network-example.component';
 import { VisTimelineExampleComponent } from './timeline/timeline-example.component';
-import { VisModule } from '../ng2-vis';
+import { VisModule } from '../ngx-vis';
 import { DemoComponent } from './demo.component';
 import { HomeComponent } from './home/home.component';
 
