@@ -404,6 +404,24 @@ export class VisNetworkService {
   }
 
   /**
+   * Get data of specific network.
+   *
+   * @param {string} visNetwork The network name/identifier.
+   * @returns {VisNetwork[]}
+   *
+   * @throws {Error} Thrown when the network does not exist.
+   *
+   * @memberOf VisNetworkService
+   */
+  public getNetwork(visNetwork: string): VisNetwork {
+    if (this.networks[visNetwork]) {
+      return this.networks[visNetwork];
+    } else {
+      throw new Error(`Network with id ${visNetwork} not found.`);
+    }
+  }
+
+  /**
    * Override all the data in the network.
    * If stabilization is enabled in the physics module,
    * the network will stabilize again.
